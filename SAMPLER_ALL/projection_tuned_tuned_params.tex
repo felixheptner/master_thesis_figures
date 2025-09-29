@@ -1,14 +1,15 @@
 \begin{table}[ht]
 \centering
 \caption{Tuned parameters for Projection Tuned}
-\adjustbox{max width=\textwidth}{\begin{tabular}{lccccccc}
+\adjustbox{max width=\textwidth}{\begin{tabular}{lcccccccc}
 \hline
-Dataset & $n_{trials}$ & Sampler $\alpha$ & Sampler $\beta$ & \acs{RD} $\alpha_{init}$ & \acs{RD} $\sigma_{mut}$ & \acs{SC} $\sigma_{mut}$ & \acs{SC} Crossover \\
+Dataset & $a$ & $b$ & $n_{trials}$ & \acs{RD} $\alpha_{init}$ & \acs{RD} $\sigma_{mut}$ & \acs{SC} $\sigma_{mut}$ & \acs{SC} $n_{cross}$ & \acs{SC} Crossover \\
 \hline
-CCPP & 155 & 5.7520 & 6.5351 & 0.0732 & 1.4439 & 0.0050 & Uniform \\
-ASN & 269 & 4.7701 & 0.2887 & 0.0538 & 2.1963 & 0.0121 & Uniform \\
-CS & 281 & 5.0946 & 2.9810 & 0.0705 & 2.5096 & 0.0025 & Uniform \\
-PT & 197 & 9.2461 & 1.9967 & 0.0143 & 3.9310 & 0.0108 & Uniform \\
+CCPP & 6.5688 & 6.8554 & 384 & 0.0419 & 1.8978 & 0.0227 & 4 & NPoint \\
+ASN & 3.3537 & 4.4107 & 642 & 0.0302 & 2.1567 & 0.0304 & 1 & NPoint \\
+CS & 3.4917 & 4.8988 & 692 & 0.0502 & 2.4858 & 0.0281 & N/A & Uniform \\
+PPPTS & 7.6774 & 8.7645 & 201 & 0.0162 & 2.9893 & 0.0224 & 4 & NPoint \\
+PT & 2.6372 & 5.4200 & 447 & 0.0100 & 4.1759 & 0.0183 & 4 & NPoint \\
 \hline
 \end{tabular}}
 \end{table}

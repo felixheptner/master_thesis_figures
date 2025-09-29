@@ -1,14 +1,15 @@
 \begin{table}[ht]
 \centering
 \caption{Tuned parameters for GA - MOO}
-\adjustbox{max width=\textwidth}{\begin{tabular}{lcccccccc}
+\adjustbox{max width=\textwidth}{\begin{tabular}{lcccccccccc}
 \hline
-Dataset & $n_{trials}$ & \acs{GA} $\sigma_{mut}$ & \acs{GA} $k_{sel}$ & \acs{GA} Crossover & \acs{MOO} $\sigma_{mut}$ & \acs{MOO} Crossover & \acs{RD} $\alpha_{init}$ & \acs{RD} $\sigma_{mut}$ \\
+Dataset & $n_{trials}$ & \acs{GA} $\sigma_{mut}$ & \acs{GA} $k_{sel}$ & \acs{GA} $n_{cross}$ & \acs{GA} Crossover & \acs{MOO} $\sigma_{mut}$ & \acs{MOO} $n_{cross}$ & \acs{MOO} Crossover & \acs{RD} $\alpha_{init}$ & \acs{RD} $\sigma_{mut}$ \\
 \hline
-CCPP & 138 & 0.0102 & 3 & Uniform & 0.0824 & Uniform & 0.1407 & 0.0556 \\
-ASN & 266 & 0.0048 & 10 & Uniform & 0.0640 & Uniform & 0.1184 & 2.1236 \\
-CS & 287 & 0.0197 & 5 & Uniform & 0.0916 & Uniform & 0.1754 & 2.4311 \\
-PT & 234 & 0.0354 & 8 & Uniform & 0.0745 & Uniform & 0.0105 & 4.2275 \\
+CCPP & 391 & 0.0112 & 6 & N/A & Uniform & 0.0563 & 8 & NPoint & 0.1081 & 0.0466 \\
+ASN & 1000 & 0.0250 & 7 & 1 & NPoint & 0.0104 & N/A & Uniform & 0.0414 & 2.0118 \\
+CS & 1000 & 0.0016 & 9 & 7 & NPoint & 0.0983 & N/A & Uniform & 0.1934 & 2.5209 \\
+PPPTS & 190 & 0.0121 & 10 & N/A & Uniform & 0.0908 & N/A & Uniform & 0.0478 & 0.4163 \\
+PT & 613 & 0.0519 & 7 & 5 & NPoint & 0.0086 & N/A & Uniform & 0.0104 & 4.1800 \\
 \hline
 \end{tabular}}
 \end{table}
